@@ -1,0 +1,35 @@
+/* src/App.module.css */
+.app {
+
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid #61dafb;
+  width: 100%;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
